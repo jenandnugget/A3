@@ -45,36 +45,20 @@ public class Apriori {
 		System.out.println("What is the file name?");
 		inputFile = keyboard.nextLine();
 	
-		
 		System.out.println("Select the minium support rate, values range from 0.00-1.00:");
 		minRate = keyboard.nextDouble();
-		//ensure that the confidence rate is within the boundaries of 0 and 1
-		if (minRate> 1 | minRate < 0)
-		{
-		System.out.println("The confidence rate you entered is invalid, please enter another value: ");
-		minRate = keyboard.nextDouble();
-		}
-		
 			
 		System.out.println("Please select the minimum confidence rate, values range from 0.00-1.00):");
 		minSupp = keyboard.nextDouble();
-		//ensure that the support rate is within the boundaries of 0 and 1
-		if (minSupp > 1 | minSupp < 0)
-		{
-		System.out.println("The support value you entered is invalid, please enter another value: ");
-		minSupp = keyboard.nextDouble();
-		}
 
 		keyboard.close();
 	
-	}//end getInput
+	}
 
 public static runApriori() {
 	// TODO Auto-generated method stub
 	
 	
 }
-
 	
 }
-
