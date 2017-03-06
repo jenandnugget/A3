@@ -19,10 +19,10 @@ public class Apriori {
 	Scanner keyboard = new Scanner(System.in); //userInput
 	
 	double currentItemS = 0;
-	ArrayList<String> data;
+	ArrayList<String> dataBuild;
 	ArrayList<String> dataType;
 	
-	//getter and setters
+	//getters
 	public double getminSupp() {
 		return minSupp;
 	}
@@ -40,20 +40,22 @@ public class Apriori {
 	}
 	
 	
-
+	//generate user input, get file name and amount of min support and confidence rate to generate rules
 	public void getInput(){
 		System.out.println("What is the file name?");
-		inputFile = keyboard.nextLine();
+		inputFile = keyboard.nextLine(); //set input to inputFile
 	
 		System.out.println("Select the minium support rate, values range from 0.00-1.00:");
-		minRate = keyboard.nextDouble();
+		minRate = keyboard.nextDouble(); //set input to minRate
 	
 		System.out.println("Please select the minimum confidence rate, values range from 0.00-1.00):");
-		minSupp = keyboard.nextDouble();
+		minSupp = keyboard.nextDouble(); ////set input to minSupp
 	
 		keyboard.close();
 	
 	}
+	
+		
 
 public static runApriori() {
 	// TODO Auto-generated method stub
