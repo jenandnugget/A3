@@ -9,12 +9,14 @@ import java.util.StringTokenizer;
 import java.io.IOException;
 
 public class Apriori {
+	        
+        
 	//declaring variables and initializing 
 	double minSupp = 0.0; //minimum support for frequent item sets
 	double minRate = 0.0; //minimum confidence rate for declaration 
 	
-	String inputFile = " "; 
-	String outputFile = " "; 
+	String inputFile = ""; 
+	String outputFile = ""; 
 	
 	double currentItemS = 0;
 	ArrayList<String> data;
@@ -38,11 +40,13 @@ public class Apriori {
 	}
 	
 	
-	
-	
-	
 	//User input
 	Scanner keyboard = new Scanner(System.in);
+
+	public static void AprioriRun() {
+		// TODO Auto-generated method stub
+		
+	}
 
 	System.out.println("What is the file name?");
 	inputFile = keyboard.nextLine();
