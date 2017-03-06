@@ -9,21 +9,42 @@ import java.util.StringTokenizer;
 import java.io.IOException;
 
 public class Apriori {
-	//necessary declarations
+	//declaring variables and initializing 
 	double minSupp = 0.0; //minimum support for frequent item sets
 	double minRate = 0.0; //minimum confidence rate for declaration 
 	
-	String inputFile = ""; 
-	String outputFile = ""; 
+	String inputFile = " "; 
+	String outputFile = " "; 
 	
 	double currentItemS = 0;
 	ArrayList<String> data;
 	ArrayList<String> dataType;
 	
+	//getter and setters
+	public double getminSupp() {
+		return minSupp;
+	}
+
+	public double getminRate() {
+		return minRate;
+	}
+
+	public String getinputFile() {
+		return inputFile;
+	}
+
+	public double getCurrentItemS() {
+		return currentItemS;
+	}
+	
+	
+	
+	
+	
 	//User input
 	Scanner keyboard = new Scanner(System.in);
 
-	System.out.println("What is the file name for your data?");
+	System.out.println("What is the file name?");
 	inputFile = keyboard.nextLine();
 
 	System.out.println("Select the minium support rate(Only values from 0.00-1.00):");
